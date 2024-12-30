@@ -1,11 +1,11 @@
 """
 Escriba el codigo que ejecute la accion solicitada en cada pregunta. Los
-datos requeridos se encuentran en los archivos `tbl0.tsv`, `tbl1.tsv` y 
-`tbl2.tsv`. En este laboratorio solo puede utilizar las funciones y 
+datos requeridos se encuentran en los archivos `tbl0.tsv`, `tbl1.tsv` y
+`tbl2.tsv`. En este laboratorio solo puede utilizar las funciones y
 librerias de pandas para resolver las preguntas.
 """
 
-
+import pandas as pd
 def pregunta_07():
     """
     Calcule la suma de la `c2` por cada letra de la `c1` del archivo
@@ -20,3 +20,13 @@ def pregunta_07():
     E    67
     Name: c2, dtype: int64
     """
+    # Leer el archivo tbl0.tsv
+    tbl0 = pd.read_csv('files/input/tbl0.tsv', sep='\t')
+
+    # Agrupar por c1 y calcular la suma de c2 para cada grupo
+    resultado = tbl0.groupby('c1')['c2'].sum()
+
+    # Imprimir el resultado
+    print(resultado)
+
+pregunta_07()
