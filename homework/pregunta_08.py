@@ -29,6 +29,6 @@ def pregunta_08():
     tbl0['suma'] = tbl0['c0'] + tbl0['c2']
 
     # Imprimir el resultado
-    print(tbl0)
+    return  tbl0
 
-pregunta_08()
+

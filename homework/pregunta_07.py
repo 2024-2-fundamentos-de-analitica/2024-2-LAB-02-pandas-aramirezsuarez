@@ -27,6 +27,5 @@ def pregunta_07():
     resultado = tbl0.groupby('c1')['c2'].sum()
 
     # Imprimir el resultado
-    print(resultado)
+    return resultado
 
-pregunta_07()

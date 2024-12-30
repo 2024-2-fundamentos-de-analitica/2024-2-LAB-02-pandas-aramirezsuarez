@@ -32,6 +32,4 @@ def pregunta_13():
     resultado = merged.groupby('c1')['c5b'].sum()
 
     # Imprimir el resultado
-    print(resultado)
-
-pregunta_13()
+    return  resultado

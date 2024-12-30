@@ -31,6 +31,5 @@ def pregunta_09():
 
 
     # Imprimir el resultado
-    print(tbl0)
+    return  tbl0
 
-pregunta_09()

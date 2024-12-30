@@ -15,6 +15,6 @@ def pregunta_06():
     resultado = sorted(tbl1['c4'].str.upper().unique())
 
     # Imprimir el resultado
-    print(resultado)
+    return resultado
 
-pregunta_06()
+

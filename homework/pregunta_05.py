@@ -14,6 +14,5 @@ def pregunta_05():
     resultado = tbl0.groupby('c1')['c2'].max()
 
     # Imprimir el resultado
-    print(resultado)
+    return resultado
 
-pregunta_05()

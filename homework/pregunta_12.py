@@ -30,6 +30,4 @@ def pregunta_12():
     resultado = tbl2.groupby('c0')['c5'].apply(lambda x: ','.join(sorted(x))).reset_index()
 
     # Imprimir el resultado
-    print(resultado)
-
-pregunta_12()
+    return  resultado

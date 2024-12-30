@@ -29,6 +29,4 @@ def pregunta_10():
     resultado.set_index('c1', inplace=True)
 
     # Imprimir el resultado
-    print(resultado)
-
-pregunta_10()
+    return  resultado

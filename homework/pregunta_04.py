@@ -9,6 +9,5 @@ import pandas as pd
 def pregunta_04():
     tbl0 = pd.read_csv('files/input/tbl0.tsv', sep='\t')
     mean_c2_by_c1 = tbl0.groupby('c1')['c2'].mean()
+  
     return mean_c2_by_c1
-
-print(pregunta_04())

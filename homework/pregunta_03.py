@@ -25,7 +25,7 @@ def pregunta_03():
 
     tbl0 = pd.read_csv('files/input/tbl0.tsv', sep='\t')
 
-    counts = tbl0['c1'].value_counts().sort_index()
-    return counts
-
-print(pregunta_03())
+    tbl0 = pd.read_csv('files/input/tbl0.tsv',
+                     sep = '\t')
+    
+    return tbl0.groupby('c1').size()
